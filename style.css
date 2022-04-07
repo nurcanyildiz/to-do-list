@@ -1,33 +1,46 @@
 .to-do-list-board {
-    margin: 25px auto;
+
     background-color: aliceblue;
 }
-.title{
+
+.title {
     text-align: center;
+    padding: 5px;
 }
-.content{
+
+.content {
     text-align: center;
 }
 
-li{
-    text-align: center;
+li {
     list-style: none;
     text-transform: capitalize;
-    margin: 12px;
     font-size: 18px;
+    margin: 10px;
+    padding:0 20px;
 }
 
-#btn{
+
+.listStyle {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#btn {
     width: 50px;
-    height: 48px;
+    height: 50px;
     font-size: 30px;
     border-color: black;
     border-radius: 4px;
     background-color: white;
+    margin:0 5px;
 }
 
-button{
-    margin:10px;
+button {
+    margin: 10px;
     background-color: white;
     border-color: black;
 }
@@ -35,8 +48,18 @@ button{
 
 #input {
     width: 400px;
-    height: 48px;
+    height: 50px;
     border-radius: 7px;
     border-color: black;
-    margin:25px auto;
+    margin: 25px auto;
 }
+
+.divTrash {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+
+}
+
+

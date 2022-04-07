@@ -4,14 +4,9 @@ const listItem = document.querySelector('#list-item');
 
 
 btn.addEventListener('click', function() {
-
-
   if(input.value === '' ){
     return;
   }
-
-
-
 
   const list = document.createElement('li');
   listItem.append(list);
@@ -24,8 +19,7 @@ btn.addEventListener('click', function() {
     list.style.color = 'red';
   });
 
-
-
+/*
   const completeBtn = document.createElement('button');
   list.append(completeBtn);
   completeBtn.innerHTML = 'x';
@@ -35,7 +29,26 @@ btn.addEventListener('click', function() {
     list.parentNode.removeChild(list);
     return false;
 
+  });*/
+
+
+
+  const div = document.createElement('div');
+  list.append(div);
+  div.classList.add('divTrash')
+  div.innerHTML = '<i class="fa fa-trash-o trash" ></i>';
+
+
+  div.addEventListener('click', function(e) {
+    list.parentNode.removeChild(list);
+    return false;
+
   });
+
+
+
+
+
 
 });
 
